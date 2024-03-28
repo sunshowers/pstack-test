@@ -1,0 +1,18 @@
+[package]
+name = "pstack-test"
+version = "0.1.0"
+edition = "2021"
+
+[profile.strip-symbols]
+inherits = "release"
+strip = "symbols"
+debug = "none"
+
+[profile.strip-debuginfo]
+inherits = "release"
+strip = "debuginfo"
+
+[profile.strip-none]
+inherits = "release"
+strip = "none"
+
